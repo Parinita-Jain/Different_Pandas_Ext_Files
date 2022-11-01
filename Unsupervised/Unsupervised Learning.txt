@@ -1,0 +1,80 @@
+---for seaborn.ipynb--------------------------------------
+
+https://www.kaggle.com/code/shubhamsinghgharsele/exploratory-data-analysis-on-automobile-dataset
+
+# following are the attriputer that show positive correlation
+
+plt.figure(figsize = (12,8))
+
+sns.heatmap(auto_df.corr(),annot = True, cmap='Blues', mask = (auto_df.corr() <= 0.7 ))
+plt.show()
+
+
+# following are the attriputer that show negative correlation
+
+plt.figure(figsize = (12,8))
+
+sns.heatmap(auto_df.corr(),annot = True, cmap='Blues', mask = (auto_df.corr() >= 0 ))
+plt.show()
+
+----------------------------------
+
+Hierarchical clustering---------------
+
+---------------------------------------
+
+In hierarchical clustering each and every data point will measure it's distance from the other data point. Here we donot have any concept of centeroid.
+
+-**draw some point and see which data points are closer. Cluster near data points and create dendogram.
+The dendogram helps in creating clusters. Draw a horizontal line on dendograms , to decide how many clusters we want to form.
+The two types of hierarchical clustering are Agglomerative clustering- means bottom up approach
+2nd is Divisive Clustering, -top to bottom approach. i.e. We keep on dividing big cluster into smaller clusters.
+
+Now, which is better? Kmeans or hierarchical? It totally depends.
+
+Hierarchical_Clustering.ipynb----
+
+-------------------------------------------
+PCA----------------------------------------
+-------------------------------------------
+
+PCA - Principal Component Analysis.
+
+This clustering will be done in 2 parts. The 2nd part will be built on 1st part, which is Kmeans clustering.
+
+PCA is a Dimensionality Reduction Algorithm. Now, what si dimensionality and why do we have to do dimensionality reduction?
+https://drive.google.com/drive/u/2/folders/1YNR7Exl_YW-m6hgY2lBClLmJ6_HPgf5E --------- when u have two features, analysis becomes easy because u can visualize
+it. With various 1 D plots, 2 D plots- bar graph,scatter plot, etc and u can understand yr data. If we add 1 more dimension, then it becomes 3 D, and still 
+u can visualize. But what if u have 7 features, that means 7 dims, then it becomes difficult to visualize. So we reduce 7 D to 3 D, then these 3 features
+are known as principal component, which is a linear combination of features.
+
+Then, pc1=theta1*x1+theta2*x2+theta3*x3+theta4*x4+theta5*x5+theta6*x6+theta7*x7 , where theta are some coefficient value.
+pc2=theta1*x1+theta2*x2+theta3*x3+theta4*x4+theta5*x5+theta6*x6+theta7*x7
+pc3=theta1*x1+theta2*x2+theta3*x3+theta4*x4+theta5*x5+theta6*x6+theta7*x7
+
+Now, the thing to remember is Even when we are reducing the dimensions, we should must not loose the information.
+
+The no. of PC depends on no. of features.
+
+https://drive.google.com/drive/u/2/folders/1YNR7Exl_YW-m6hgY2lBClLmJ6_HPgf5E------PCA explanation
+
+AB^2=BC^2+AC^2
+
+Now, BC is the distance that we are trying to minimize.
+
+Now, distance AB is fixed, so what we can do is minimize BC and maximize AC. That is , shift the line towards the data point. And thats how we find the best fit line.
+And this is our PC1. Now, the second PC is always 90degree or perpendicular to 1st one.
+
+One of the best part of PCA is there is no multicollinearity (i.e. no correlation) between PCs.
+
+  
+
+
+
+PCA.ipynb--------
+
+
+
+
+
+

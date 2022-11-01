@@ -1,0 +1,80 @@
+Regression is techinique in supervised learning where we predict the
+continuous data
+
+Regression is supervised learning technique where the target variable 
+is continuous in nature
+
+It is a processing for establishing a relationship between
+x & y,
+
+LinearRegression
+It is a processing for establishing a relationship between
+x & y, and when the relationship is linear in nature , we call it as
+linearregression
+
+
+
+Explain LinearRegression
+def -: is a process of establishing relationship between your dependent variable
+and independent variable, and when the relationship is linear in nature we call it as linear regression
+
+goal-: is to create a best-fit line by using the formula
+Y = MX + C
+	where, 
+		Y is dependent variable
+		X is independent variable
+		M is slope/ gradient/ weight/ Coefficient of Regression
+		C is intercept(point where line touches at Yaxis)
+
+
+objective -:
+	1. is to establish the relationship between x & y
+	2. is to forecaste new observations
+
+adv -: is very easy to interpret
+
+disadv -: highly affected by outliers, missing values & skewness
+
+performance -: we use MAE,MSE, RMSE evaluation of error in model
+		we use R2 score to evaluate how good the model is performing
+
+Optimization -:
+
+
+
+
+Error is difference between the actual value & Predicted Values
+
+
+|3-2.8| + |4-3.3| + |2-3.6| + |4-4| + |5-4.4| / 5 =>mae 
+
+(3-2.8)**2 + (4-3.3)**2 + (2-3.6)**2 + (4-4)**2 + (5-4.4)**2 / 5 =>mse 
+
+
+np.sqrt(0.72)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

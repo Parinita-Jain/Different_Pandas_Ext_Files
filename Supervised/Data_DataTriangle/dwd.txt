@@ -1,0 +1,18 @@
+Data-: any obseration that has been recorded...
+
+
+1 Person => 40EB
+
+1024 mb => 1gb
+1024 gb => 1tb
+1024 tb => 1pb
+1024 pb => 1eb => 40 eb=> 5.5 billion
+
+
+1. Data generation
+2. Data Storage
+3. Computation
+
+
+
+
